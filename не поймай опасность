@@ -1,0 +1,53 @@
+#include <SFML/Graphics.hpp>
+
+const int SCREEN_WIDTH = 800;
+const int SCREEN_HEIGHT = 600;
+
+class Player {
+    //public
+};
+
+class Item {
+    //public
+};
+
+class Enemy { //водоросли
+
+};
+
+int main() {
+    sf::RenderWindow window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Не поймай опасность");
+    Player player;
+    std::vector<Item> items;
+    std::vector<Enemy> enemies;
+    int score = 0;
+    bool gameOver = false;
+
+    while (window.isOpen()) {
+        if (!gameOver) {
+            // проверка что рыбка на том месте где мышка
+
+            if (rand() % 100 < 2) { // 0,02 шанс на водорсль
+                items.emplace_back();
+            }
+            if (rand() % 100 < 1) { // 0,01 шанс на сетку
+                enemies.emplace_back();
+            }
+
+            //добавить новый предмет 
+            //удалить если вышел из экрана
+            // + для врага
+
+
+        window.clear();
+
+        //счет 
+
+        if (gameOver) {
+            // надпись когда наткнетсчя на водоросль и игра закончится
+        }
+        window.display();
+    }
+
+    return 0;
+}
