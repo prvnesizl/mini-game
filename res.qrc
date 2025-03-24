@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>img/fish.png</file>
         <file>img/stoun.jpg</file>
+        <file>img/fon.jpg</file>
     </qresource>
 </RCC>

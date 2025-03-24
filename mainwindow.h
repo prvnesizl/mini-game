@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QKeyEvent>
 #include "model.h"
+#include <QPushButton>
+#include <QGridLayout>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,8 +22,11 @@ public:
 private:
     Ui::MainWindow *ui;
     Model *model{};
-
+    QPushButton *pbRestart{};
+    QGridLayout *btnLayout{};
 protected:
     void	keyReleaseEvent(QKeyEvent *event) override;
+
+
 };
 #endif // MAINWINDOW_H
